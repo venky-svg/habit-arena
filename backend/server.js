@@ -122,20 +122,19 @@ app.get('/api/developer/time', async (req, res) => {
 });
 
 // Serve frontend statically in production
-const frontendBuildPath = path.join(__dirname, '../frontend/dist');
-app.use(express.static(frontendBuildPath));
+//const frontendBuildPath = path.join(__dirname, '../frontend/dist');
+//app.use(express.static(frontendBuildPath));
 
 // Fallback for single page app routing
-app.get('*', (req, res, next) => {
+//app.get('*', (req, res, next) => {
   // If request is API, pass through
-  if (req.url.startsWith('/api')) {
-    return next();
-  }
-  res.sendFile(path.join(frontendBuildPath, 'index.html'));
-});
-
+  //if (req.url.startsWith('/api')) {
+    //return next();
+  //}
+  //res.sendFile(path.join(frontendBuildPath, 'index.html'));
+//});
 // Create HTTP server
-const server = http.createServer(app);
+//const server = http.createServer(app);
 
 // Setup Socket.IO
 const io = new Server(server, {
