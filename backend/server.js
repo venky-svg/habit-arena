@@ -132,9 +132,11 @@ app.get('/api/developer/time', async (req, res) => {
     //return next();
   //}
   //res.sendFile(path.join(frontendBuildPath, 'index.html'));
-//});
+  app.get("/", (req, res) => {
+  res.send("HabitArena Backend Running");
+});
 // Create HTTP server
-//const server = http.createServer(app);
+const server = http.createServer(app);
 
 // Setup Socket.IO
 const io = new Server(server, {
