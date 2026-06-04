@@ -1,0 +1,216 @@
+{
+  "users": [
+    {
+      "id": "u_admin",
+      "createdAt": "2026-06-04T15:00:00.000Z",
+      "username": "admin",
+      "email": "admin@habitarena.com",
+      "passwordHash": "$2a$10$xeHgHJUHg9kOc8l0ivHSROBijAXtDgWM6FDKriVQ9ZEp4IuTxF4ZG",
+      "xp": 600,
+      "streak": 5,
+      "badges": [
+        {
+          "name": "3-Day Warrior",
+          "description": "Maintain a 3-day consistency streak",
+          "unlockedAt": "2026-06-02T10:00:00.000Z"
+        },
+        {
+          "name": "Consistency King",
+          "description": "Won your first HabitArena challenge!",
+          "unlockedAt": "2026-06-04T17:20:19.437Z"
+        }
+      ],
+      "level": "Gold",
+      "profilePhoto": "https://api.dicebear.com/7.x/pixel-art/svg?seed=admin",
+      "role": "admin",
+      "isBanned": false,
+      "updatedAt": "2026-06-04T17:20:19.437Z"
+    },
+    {
+      "id": "u_friend",
+      "createdAt": "2026-06-04T15:01:00.000Z",
+      "username": "friend",
+      "email": "friend@habitarena.com",
+      "passwordHash": "$2a$10$NSkpaFsdtyj/eJfFIS9N3uQY6b68Ye55GB7moZXEMQEtnBGX2R6I6",
+      "xp": 120,
+      "streak": 3,
+      "badges": [
+        {
+          "name": "First Steps",
+          "description": "Complete your first habit task",
+          "unlockedAt": "2026-06-03T11:00:00.000Z"
+        }
+      ],
+      "level": "Silver",
+      "profilePhoto": "https://api.dicebear.com/7.x/pixel-art/svg?seed=friend",
+      "role": "user",
+      "isBanned": false,
+      "updatedAt": "2026-06-04T15:53:41.358Z"
+    }
+  ],
+  "challenges": [
+    {
+      "id": "c_dsa",
+      "createdAt": "2026-06-04T15:02:00.000Z",
+      "title": "30-Day DSA Grind Challenge",
+      "description": "Solve LeetCode problems daily, learn data structures, and keep grinding!",
+      "duration": 30,
+      "inviteCode": "DSAMAX",
+      "isPublic": true,
+      "maxParticipants": 15,
+      "creatorId": "u_admin",
+      "creatorName": "admin",
+      "members": [
+        "u_admin",
+        "u_friend"
+      ],
+      "status": "completed",
+      "startDate": "2026-06-04T00:00:00.000Z",
+      "endDate": "2026-07-04T00:00:00.000Z",
+      "winner": {
+        "userId": "u_admin",
+        "username": "admin",
+        "xp": 0,
+        "completionRate": 0
+      },
+      "leaderboard": [
+        {
+          "userId": "u_admin",
+          "username": "admin",
+          "totalXp": 0,
+          "tasksCompleted": 0,
+          "totalTasks": 2,
+          "completionRate": 0
+        },
+        {
+          "userId": "u_friend",
+          "username": "friend",
+          "totalXp": 0,
+          "tasksCompleted": 0,
+          "totalTasks": 0,
+          "completionRate": 0
+        }
+      ],
+      "updatedAt": "2026-06-04T17:20:19.429Z"
+    },
+    {
+      "id": "evfmfvgp4",
+      "createdAt": "2026-06-04T16:57:27.607Z",
+      "title": "10 days challenge",
+      "description": "consistency",
+      "duration": 10,
+      "inviteCode": "Y9XWP7",
+      "isPublic": true,
+      "maxParticipants": 2,
+      "creatorId": "u_admin",
+      "creatorName": "admin",
+      "members": [
+        "u_admin"
+      ],
+      "status": "active",
+      "startDate": "2026-06-04T16:57:27.606Z",
+      "endDate": "2026-06-14T16:57:27.606Z",
+      "winner": null,
+      "leaderboard": [
+        {
+          "userId": "u_admin",
+          "username": "admin",
+          "profilePhoto": "https://api.dicebear.com/7.x/pixel-art/svg?seed=admin",
+          "streak": 5,
+          "level": "Gold",
+          "totalXp": 0,
+          "tasksCompleted": 0,
+          "totalTasks": 0,
+          "completionRate": 0
+        }
+      ],
+      "updatedAt": "2026-06-04T17:20:48.840Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "qj6l8f2yp",
+      "createdAt": "2026-06-04T17:09:10.579Z",
+      "taskName": "python",
+      "difficulty": "easy",
+      "completed": false,
+      "completionTime": null,
+      "userId": "u_admin",
+      "challengeId": "c_dsa",
+      "date": "2026-06-05"
+    },
+    {
+      "id": "zffmv8c30",
+      "createdAt": "2026-06-04T17:09:16.640Z",
+      "taskName": "eng",
+      "difficulty": "easy",
+      "completed": false,
+      "completionTime": null,
+      "userId": "u_admin",
+      "challengeId": "c_dsa",
+      "date": "2026-06-05"
+    }
+  ],
+  "messages": [
+    {
+      "id": "msg_welcome",
+      "createdAt": "2026-06-04T15:03:00.000Z",
+      "challengeId": "c_dsa",
+      "userId": "system",
+      "username": "System",
+      "text": "🎉 Challenge \"30-Day DSA Grind Challenge\" was created by admin! Invite Code: DSAMAX",
+      "reactions": [],
+      "timestamp": "2026-06-04T15:03:00.000Z"
+    },
+    {
+      "id": "msg_chat_1",
+      "createdAt": "2026-06-04T15:04:00.000Z",
+      "challengeId": "c_dsa",
+      "userId": "u_admin",
+      "username": "admin",
+      "profilePhoto": "https://api.dicebear.com/7.x/pixel-art/svg?seed=admin",
+      "text": "Let's push each other to study DSA every day! 💪",
+      "reactions": [
+        {
+          "userId": "u_friend",
+          "username": "friend",
+          "emoji": "🔥"
+        }
+      ],
+      "timestamp": "2026-06-04T15:04:00.000Z"
+    },
+    {
+      "id": "f3qd6dy9j",
+      "createdAt": "2026-06-04T16:57:27.614Z",
+      "challengeId": "evfmfvgp4",
+      "userId": "system",
+      "username": "System",
+      "text": "🎉 Challenge \"10 days challenge\" was created by admin! Invite Code: Y9XWP7",
+      "reactions": [],
+      "timestamp": "2026-06-04T16:57:27.614Z"
+    },
+    {
+      "id": "lvzcit4z5",
+      "createdAt": "2026-06-04T16:59:50.664Z",
+      "challengeId": "system",
+      "userId": "system",
+      "username": "System",
+      "text": "⏰ Time advanced by 1 day(s). System date: 2026-06-05. Tasks reset for the new day!",
+      "reactions": [],
+      "timestamp": "2026-06-05T16:59:50.662Z"
+    },
+    {
+      "id": "vgc8jnplt",
+      "createdAt": "2026-06-04T17:20:19.441Z",
+      "challengeId": "c_dsa",
+      "userId": "system",
+      "username": "System",
+      "text": "🏆 Challenge \"30-Day DSA Grind Challenge\" has ended! The winner is admin with 0 XP and 0% completion rate! 👑",
+      "reactions": [],
+      "timestamp": "2026-06-04T17:20:19.441Z"
+    }
+  ],
+  "settings": {
+    "systemTimeOffset": 86400000
+  }
+}
