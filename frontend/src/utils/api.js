@@ -1,6 +1,6 @@
 // All API calls use relative paths — Vite proxies /api → http://habit-arena-backend.onrender.com in dev.
 // In production (served by Express), the same relative URLs work natively.
-const API_BASE = '/api';
+const API_BASE = 'https://habit-arena-backend.onrender.com/api';
 
 // Socket.IO also connects via the same origin in dev (Vite proxies /socket.io → port 5000)
 export const SOCKET_URL = window.location.origin;
