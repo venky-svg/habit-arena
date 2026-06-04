@@ -1,4 +1,4 @@
-// All API calls use relative paths — Vite proxies /api → http://localhost:5000 in dev.
+// All API calls use relative paths — Vite proxies /api → http://habit-arena-backend.onrender.com in dev.
 // In production (served by Express), the same relative URLs work natively.
 const API_BASE = '/api';
 
