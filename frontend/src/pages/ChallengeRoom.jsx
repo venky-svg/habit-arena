@@ -81,7 +81,7 @@ export const ChallengeRoom = ({ challengeId, onBack }) => {
   };
 
   const initSocketConnection = () => {
-    socketRef.current = io(SOCKET_URL);
+    socketRef.current = io('https://habit-arena-backend.onrender.com');
     
     socketRef.current.emit('join_room', { challengeId });
 
