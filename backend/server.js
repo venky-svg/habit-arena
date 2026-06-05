@@ -121,16 +121,6 @@ app.get('/api/developer/time', async (req, res) => {
   }
 });
 
-// Serve frontend statically in production
-//const frontendBuildPath = path.join(__dirname, '../frontend/dist');
-//app.use(express.static(frontendBuildPath));
-
-// Fallback for single page app routing
-//app.get('*', (req, res, next) => {
-  // If request is API, pass through
-  //if (req.url.startsWith('/api')) {
-    //return next();
-  //}
   //res.sendFile(path.join(frontendBuildPath, 'index.html'));
   app.get("/", (req, res) => {
   res.send("HabitArena Backend Running");
