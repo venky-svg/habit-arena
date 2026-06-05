@@ -5,9 +5,7 @@ import express from 'express';
 import http from 'http';
 import { Server } from 'socket.io';
 import cors from 'cors';
-import path from 'path';
 import mongoose from 'mongoose';
-import { fileURLToPath } from 'url';
 import { db } from './database/db.js';
 
 // Route imports
@@ -19,9 +17,6 @@ import adminRoutes from './routes/admin.js';
 
 // Service imports
 import { processDayTransition } from './services/streakManager.js';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 
 const app = express();
 const PORT = process.env.PORT || 5000;
