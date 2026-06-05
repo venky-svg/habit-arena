@@ -3,7 +3,7 @@
 const API_BASE = 'https://habit-arena-backend.onrender.com/api';
 
 // Socket.IO also connects via the same origin in dev (Vite proxies /socket.io → port 5000)
-export const SOCKET_URL = window.location.origin;
+export const SOCKET_URL = 'https://habit-arena-backend.onrender.com';
 
 async function request(endpoint, options = {}) {
   const token = localStorage.getItem('habit_arena_token');
